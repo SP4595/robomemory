@@ -6,7 +6,7 @@ import viteCompression from "vite-plugin-compression";
 import minipic from "vite-plugin-minipic";
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/RoboMemory/",
+  base: "/robomemory/",
   plugins: [
     vue(),
     viteCompression({
