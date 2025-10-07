@@ -133,7 +133,7 @@
       </button> -->
       <button
         class="button unfinished"
-        onclick="window.alert('Code will be released soon!')"
+        onclick="window.alert('Code will be released soon!','123')"
         type="button"
       >
         <div class="gitHubIcon"></div>
