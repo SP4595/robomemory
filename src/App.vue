@@ -200,11 +200,10 @@
     <div class="contentImg contentImg1">
       <img src="./assets/pic/fig1_og.png" alt="image" />
       <div class="introText">
-        <span class="bold">Figure 1:</span> The brain-inspired architecture of
-        the RoboMemory resembles the biological nervous system. It maps
-        biological neural components, enabling the agent to interact with
-        diverse environments (real-world, Habitat, ALFRED) and robotic hardware
-        for long-term planning and lifelong learning.
+        <span class="bold">Figure 1:</span> RoboMemory adopts a brain-inspired
+        architecture that maps neural components to agent modules, enabling
+        long-term planning and interactive learning across diverse environments
+        (real world, Habitat, ALFRED) and robotic hardware.
       </div>
     </div>
   </div>
