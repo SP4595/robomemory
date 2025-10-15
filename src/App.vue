@@ -23,10 +23,6 @@
         <span class="sup">1, *</span><span class="arthorName">, </span>
       </div>
       <div class="arthorNameContainer">
-        <span class="arthorName">Binbin Que</span>
-        <span class="sup">1, 7</span><span class="arthorName">, </span>
-      </div>
-      <div class="arthorNameContainer">
         <span class="arthorName">Zezhou Cui</span>
         <span class="sup">1, 3</span><span class="arthorName">, </span>
       </div>
@@ -44,7 +40,7 @@
       </div>
       <div class="arthorNameContainer">
         <span class="arthorName">Shuangyu Zhu</span>
-        <span class="sup">1, 5</span><span class="arthorName">, </span>
+        <span class="sup">1, 6</span><span class="arthorName">, </span>
       </div>
       <div class="arthorNameContainer">
         <span class="arthorName">Yimou Wu</span><span class="sup">3</span
@@ -59,6 +55,18 @@
         ><span class="arthorName">, </span>
       </div>
       <div class="arthorNameContainer">
+        <span class="arthorName">Yuyuan Yang</span><span class="sup">3</span
+        ><span class="arthorName">, </span>
+      </div>
+      <div class="arthorNameContainer">
+        <span class="arthorName">Junyuan Tan</span><span class="sup">1</span
+        ><span class="arthorName">, </span>
+      </div>
+      <div class="arthorNameContainer">
+        <span class="arthorName">Zhenglin Wan</span><span class="sup">5</span
+        ><span class="arthorName">, </span>
+      </div>
+      <div class="arthorNameContainer">
         <span class="arthorName">Zhen Li</span><span class="sup">1, 2</span
         ><span class="arthorName">, </span>
       </div>
@@ -68,10 +76,10 @@
       </div>
       <div class="arthorNameContainer">
         <span class="arthorName">Yiming Zhao</span
-        ><span class="sup">1, 6, 7</span><span class="arthorName">, </span>
+        ><span class="sup">1, 7, 8</span><span class="arthorName">, </span>
       </div>
       <div class="arthorNameContainer">
-        <span class="arthorName">Yatong Han</span><span class="sup">1, 7</span>
+        <span class="arthorName">Yatong Han</span><span class="sup">1, 8</span>
       </div>
     </div>
     <div class="expression">
@@ -101,16 +109,20 @@
       </div>
       <div class="universityContainer">
         <span class="sup"> 5 </span
+        ><span class="universityName">Nanyang Technological University </span>
+      </div>
+      <div class="universityContainer">
+        <span class="sup"> 6 </span
         ><span class="universityName"
           >Harbin Institute of Technology, Shenzhen
         </span>
       </div>
       <div class="universityContainer">
-        <span class="sup"> 6 </span
+        <span class="sup"> 7 </span
         ><span class="universityName">Harbin Engineering University </span>
       </div>
       <div class="universityContainer">
-        <span class="sup"> 7 </span
+        <span class="sup"> 8 </span
         ><span class="universityName">Infused Synapse AI </span>
       </div>
     </div>
@@ -153,29 +165,22 @@
   <div class="articleMainBodyContainer contentContainer">
     <div class="contentMainTitle">Abstract</div>
     <div class="content">
-      We present RoboMemory, a brain-inspired multi-memory framework for
-      lifelong learning in physical embodied systems, addressing critical
-      challenges in real-world environments: continuous learning, multi-module
-      memory latency, task correlation capture, and infinite-loop mitigation in
-      closed-loop planning. Grounded in cognitive neuroscience, it integrates
-      four core modules: the Information Preprocessor (thalamus-like), the
-      Lifelong Embodied Memory System (hippocampus-like), the Closed-Loop
-      Planning Module (prefrontal lobe-like), and the Low-Level Executer
-      (cerebellum-like) to enable long-term planning and cumulative learning.
-      The Lifelong Embodied Memory System, central to the framework, alleviates
-      inference speed issues in complex memory frameworks via parallelized
-      updates/retrieval across Spatial, Temporal, Episodic, and Semantic
-      submodules. It incorporates a dynamic Knowledge Graph (KG) and consistent
-      architectural design to enhance memory consistency and scalability.
-      Evaluations on EmbodiedBench show RoboMemory outperforms the open-source
-      baseline (Qwen2.5-VL-72B-Ins) by 25% in average success rate and surpasses
-      the closedsource State-of-the-Art (SOTA) (Claude3.5-Sonnet) by 5%,
-      establishing new SOTA. Ablation studies validate key components (critic,
-      spatial memory, longterm memory), while real-world deployment confirms its
-      lifelong learning capability with significantly improved success rates
-      across repeated tasks. RoboMemory alleviates high latency challenges with
-      scalability, serving as a foundational reference for integrating
-      multi-modal memory systems in physical robots.
+      Embodied agents face persistent challenges in real-world environments,
+      including partial observability, limited spatial reasoning, and
+      high-latency multi-memory integration. We present RoboMemory, a
+      brain-inspired framework that unifies Spatial, Temporal, Episodic, and
+      Semantic memory under a parallelized archi tecture for efficient
+      long-horizon planning and interactive environmental learn ing. A dynamic
+      spatial knowledge graph (KG) ensures scalable and consistent memory
+      updates, while a closed-loop planner with a critic module supports
+      adaptive decision-making in dynamic settings. Experiments on EmbodiedBench
+      show that RoboMemory, built on Qwen2.5-VL-72B-Ins, improves average
+      success rates by 25% over its baseline and exceeds the closed-source
+      state-of-the-art (SOTA) Gemini-1.5-Pro by 3%. Real-world trials further
+      confirm its capacity for cumulative learning, with performance improving
+      across repeated tasks. These results highlight RoboMemory as a scalable
+      foundation for memory-augmented embodied intelligence, bridging the gap
+      between cognitive neuroscience and robotic autonomy.
     </div>
 
     <!-- <div class="codeSpace">
@@ -193,13 +198,12 @@
   </div>
   <div class="articleMainBodyContainer contentContainer">
     <div class="contentImg contentImg1">
-      <img src="./assets/pic/fig1.png" alt="image" />
+      <img src="./assets/pic/fig1_og.png" alt="image" />
       <div class="introText">
-        <span class="bold">Figure 1:</span> The brain-inspired architecture of
-        the RoboMemory resembles the biological nervous system. It maps
-        biological neural components, enabling the agent to interact with
-        diverse environments (real-world, Habitat, ALFRED) and robotic hardware
-        for long-term planning and lifelong learning.
+        <span class="bold">Figure 1:</span> RoboMemory adopts a brain-inspired
+        architecture that maps neural components to agent modules, enabling
+        long-term planning and interactive learning across diverse environments
+        (real world, Habitat, ALFRED) and robotic hardware.
       </div>
     </div>
   </div>
@@ -207,17 +211,19 @@
     <div class="contentImg contentImg">
       <img src="./assets/pic/fig2.png" alt="image" />
       <div class="introText">
-        <span class="bold">Figure 2:</span> RoboMemory architecture with working
-        pipeline and memory mechanisms. (a) Left: The agent’s pipeline. Parallel
-        Step Summarizer and Query Generator in Information Processor (1)
-        generate updates/queries for Lifelong Embodied Memory (2). These
-        memories enable Closed-Loop Planning (3) for tasks like “slice and pick
-        up the apple”—the Planner generates plans, while the Critic and memories
-        adjust decisions via feedback from visual inputs/results (4). (b) Right:
-        Spatial and Semantic memories operate in parallel with isomorphic
-        updates. Internally, Spatial memory maintains a
-        relevance/similarity-updated KG, and Semantic memory manages a Vector DB
-        with analogous logic.
+        <span class="bold">Figure 2: RoboMemory architecture. </span>(a) Left:
+        Parallel Step Summarizer and Query Generator generate updates/queries
+        for Comprehensive Embodied Memory. These memories enable Closed Loop
+        Planning for tasks like “slice and pick up the apple”—the Planner
+        generates plans, while the Critic and memories adjust decisions via
+        feedback from visual inputs/results. (b) Right: Spatial memory maintains
+        a relevance/similarity-updated KG, and Semantic/Episodic memory manages
+        a Vector DB with analogous logic. Besides, Temporal memory is
+        implemented as a linear FIFO buffer that stores step-wise summaries
+        generated by the Step Summarizer. Together, S and Q provide a swift,
+        text-based interface between raw sensory data and provide basic
+        information in each iteration for RoboMemory’s Comprehensive Embodied
+        Memory System.
       </div>
     </div>
   </div>
@@ -284,10 +290,10 @@ a:hover {
   height: fit-content;
   padding: 5vmax 0;
 }
-.contentContainer:nth-child(even) {
+.contentContainer:nth-child(odd):not(:first-child) {
   background-color: #f0f0f0;
 }
-.contentContainer:nth-child(odd) {
+.contentContainer:nth-child(even) {
   background-color: #ffffff;
 }
 
