@@ -6,7 +6,7 @@ Built with Vue 3 and Vite. The website follows a simple, centered academic layou
 
 The 20 authors, their order, affiliation superscripts, equal-contribution markers, and corresponding-author envelopes follow the first page of the supplied CoRL 2026 manuscript. Desktop author rows also match the paper's four rows of five names; they wrap on smaller screens without reordering.
 
-BibTeX uses the supplied OpenReview citation and the requested author field (the first ten authors followed by `and others`). The citation key remains `anonymous2026robomemory`. The displayed author list remains the full manuscript author list.
+BibTeX uses the supplied citation and the requested author field (the first ten authors followed by `and others`), with the URL field omitted. The citation key remains `anonymous2026robomemory`. The displayed author list remains the full manuscript author list.
 
 ## Local development
 

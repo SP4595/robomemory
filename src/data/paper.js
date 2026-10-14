@@ -86,6 +86,5 @@ anonymous2026robomemory,
 title={RoboMemory: A Brain-inspired Multi-memory Agentic Framework for Interactive Environmental Learning in Physical Embodied Systems},
 author={Lei, Mingcong and Cai, Honghao and Yang, Yuyuan and Wu, Yimou and Ren, Jinke and Cui, Zezhou and Tan, Liangchen and Hong, Junkun and Hu, Gehan and Zhu, Shuangyu and others},
 booktitle={10th Annual Conference on Robot Learning},
-year={2026},
-url={https://openreview.net/forum?id=Q4ehHMIPmb}
+year={2026}
 }`
