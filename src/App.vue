@@ -96,9 +96,13 @@ onUnmounted(() => {
           rel="noopener"
           ><span class="arxiv-symbol" aria-hidden="true">a<span>χ</span></span> arXiv</a
         >
-        <button class="resource-button code-unavailable" type="button" disabled>
-          <Icon name="code" /> Code <span class="coming-soon">(coming soon)</span>
-        </button>
+        <a
+          class="resource-button"
+          href="https://github.com/SP4595/RoboMemory-Code"
+          target="_blank"
+          rel="noopener"
+          ><Icon name="code" /> Code</a
+        >
         <a class="resource-button" href="#citation"><Icon name="copy" /> BibTeX</a>
       </div>
     </header>
