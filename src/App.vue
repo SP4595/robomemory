@@ -61,7 +61,7 @@ onUnmounted(() => {
         Physical Embodied Systems
       </h1>
       <p class="publication-venue">CoRL 2026</p>
-      <p class="acceptance-note">Accepted at the Conference on Robot Learning</p>
+      <p class="acceptance-note">Accepted at the 10th Conference on Robot Learning</p>
 
       <div class="publication-authors" aria-label="Authors, in the order of the CoRL 2026 paper">
         <div v-for="(row, rowIndex) in authorRows" :key="rowIndex" class="author-row">
